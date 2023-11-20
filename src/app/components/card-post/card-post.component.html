@@ -1,0 +1,10 @@
+<div class="post">
+    <div class="contenido">
+        <h3>{{post.titulo}}</h3>
+        <img class="imagen" [src]="post.imagen" alt="">
+        <p>{{post.texto}}</p>
+        <div class="d-grid gap-2">
+            <button class="btn btn-outline-warning" [routerLink]="['/detalle', post.id]">Ver más</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Combo&family=Montserrat+Alternates:wght@200;900&family=Rajdhani&family=Rasa:wght@300;500&family=Sulphur+Point:wght@300&display=swap');
+
+
+.post {
+    width: 400px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px auto 10px;
+    background-color: lightgoldenrodyellow;
+}
+
+.post .imagen {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+
+}
+
+.post .contenido {
+    padding: 5px
+}
+
+.post .contenido h3 {
+    text-align: center;
+}
+
+.post .contenido p {
+    text-align: center;
+}
+
+p {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 200;
+}
+
+button {
+    color: #263e54
+}
+
+.contenido h3 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bold;
+}
