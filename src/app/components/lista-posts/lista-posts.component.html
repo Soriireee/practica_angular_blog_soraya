@@ -1,1 +1,10 @@
-<p>lista-posts works!</p>
+<div>
+    <label class="form-label"></label>
+    <select class="form-select" (change)="onChange($event)">
+        <option *ngFor="let categoria of arrCategorias" [value]="categoria">{{categoria}}</option>
+    </select>
+</div>
+<div class="posts">
+
+    <card-post *ngFor="let post of arrPosts" [post]="post"></card-post>
+</div>
