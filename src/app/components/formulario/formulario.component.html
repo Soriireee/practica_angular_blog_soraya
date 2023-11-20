@@ -1,1 +1,38 @@
-<p>formulario works!</p>
+<form [formGroup]="formulario" (ngSubmit)="onSubmit()" class="card p-3 mt-5 shadow">
+    <div>
+        <h2>Formulario</h2>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label" for="titulo">Título</label>
+        <input type="text" placeholder="introduce un título" class="form-control" formControlName="titulo">
+        <p class="error" *ngIf="checkError('titulo', 'required')">
+            El título es obligatorio.
+        </p>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="texto">Texto</label>
+        <input type="text" placeholder="introduce el texto" class="form-control" formControlName="texto">
+    </div>
+    <div class=" mb-3">
+        <label class="form-label" for="email">Autor</label>
+        <input type="text" placeholder="introduce el autor" class="form-control" formControlName="autor">
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="fecha">Fecha</label>
+        <input type="date" class="form-control" formControlName="fecha">
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="dni">Categorias</label>
+        <select name="" id="" formControlName="categorias">
+            <option value="viajes">Viajes</option>
+            <option value="fotografía">Fotografía</option>
+            <option value="cocina">Cocina</option>
+            <option value="hogar">Hogar</option>
+            <option value="moda">Moda</option>
+            <option value="salud y bienestar">Salud&Bienestar</option>
+            <option value="belleza">Belleza</option>
+        </select>
+    </div>
+    <input type="submit" class="btn btn-outline-secondary" value="Enviar">
+</form>
