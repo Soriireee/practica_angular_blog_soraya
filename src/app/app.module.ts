@@ -8,17 +8,27 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ListaPostsComponent } from './components/lista-posts/lista-posts.component';
 import { FormularioComponent } from './components/formulario/formulario.component';
 
+import { ReactiveFormsModule } from '@angular/forms';
+import { CardPostComponent } from './components/card-post/card-post.component';
+import { HomeComponent } from './components/home/home.component';
+import { DetallePostComponent } from './pages/detalle-post/detalle-post.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
     FooterComponent,
     ListaPostsComponent,
-    FormularioComponent
+    FormularioComponent,
+    CardPostComponent,
+    HomeComponent,
+    DetallePostComponent,
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
