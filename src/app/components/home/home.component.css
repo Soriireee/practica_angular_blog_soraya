@@ -1,0 +1,49 @@
+.container {
+    width: 500px;
+    height: auto;
+
+}
+
+.container1 {
+    color: white;
+    font-weight: bolder;
+}
+
+img {
+
+    padding: 0;
+    float: left;
+}
+
+.container {
+
+    position: relative;
+    float: left;
+    /* Cambiar por right si quieres que las imágenes se alineen a la derecha */
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.container:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(91, 124, 233, 0.5);
+    /* rojo */
+    background-image: url(http://lh4.googleusercontent.com/-Qva8IVtO25k/UFejhDww-zI/AAAAAAAADAY/RnlCb7JO0xs/s000/grunge.png);
+    background-size: cover;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5), inset 0 0 50px rgba(0, 0, 0, 0.5), inset 0 0 50px rgba(0, 0, 0, 0.5);
+    -moz-transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.container:hover:before {
+    background: none;
+    box-shadow: none;
+}
